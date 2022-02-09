@@ -1,0 +1,20 @@
+// Clases unicas de index
+
+/* Fuente especial a la el cartel de bienvenida */
+
+.bienvenida{
+    font-family: $fuente-8bit;
+}
+
+/* Animaciones del main de index */
+
+
+.glowing{
+    transition: 1.2s;
+    &:hover{
+        box-shadow: 0px 0px 10px #7491F6;
+        transform: scale(1.003)
+    }
+}
+
+
