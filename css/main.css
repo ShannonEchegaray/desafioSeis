@@ -1,0 +1,94 @@
+/* Css general de la pagina */
+@font-face {
+  font-family: "8bitoperator";
+  src: url(../fuente/8bitOperatorPlus-Regular.ttf); }
+
+body {
+  background-color: #291129;
+  color: #fff;
+  font-family: "Montserrat"; }
+  body a {
+    color: #fff; }
+
+/* header */
+.header {
+  background-color: #0A45C3;
+  font-family: "8bitoperator";
+  /* Propiedad para ajustar el icono */ }
+  .header .min-wi {
+    min-width: 60px; }
+  .header .anchor-header {
+    text-decoration: none; }
+    .header .anchor-header:hover {
+      background-color: #062B79;
+      color: #eee; }
+  .header .anchor-header-title {
+    text-decoration: none; }
+    .header .anchor-header-title:hover {
+      color: #fff;
+      text-shadow: 0 0 4px #fff; }
+  .header .menu-offcanvas {
+    background-color: #0A45C3; }
+  .header .anchor-offcanvas {
+    text-decoration: none; }
+    .header .anchor-offcanvas:hover {
+      background-color: #062B79;
+      color: #eee; }
+
+/* Media queries */
+/* Media querie para dejar el menu pegado arriba cuando ya este el icono de hamburguesa */
+@media screen and (max-width: 992px) {
+  .sticky-menu {
+    position: sticky;
+    top: 0; } }
+
+/*Animacion del header*/
+.fluid {
+  animation: fluir 30s ease-in-out infinite;
+  background: linear-gradient(45deg, #0A45C3, #7491F6, #0A45C3, #7491F6);
+  background-size: 300%; }
+
+@keyframes fluir {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 50% 50%; }
+  100% {
+    background-position: 100% 50%; } }
+
+main .main-color {
+  background-color: #7491F6; }
+
+main .main-anchor:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff; }
+
+main .main-anchor-title {
+  color: #fff;
+  text-decoration: none; }
+  main .main-anchor-title:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #fff; }
+
+footer .main-anchor-title {
+  color: #fff;
+  text-decoration: none; }
+  footer .main-anchor-title:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #fff; }
+
+/* Fuente especial a la el cartel de bienvenida */
+.bienvenida {
+  font-family: "8bitoperator"; }
+
+/* Animaciones del main de index */
+.glowing {
+  transition: 1.2s; }
+  .glowing:hover {
+    box-shadow: 0px 0px 10px #7491F6;
+    transform: scale(1.003); }
+
+/* Dando la misma altura de las imagenes */
+.img-fix {
+  height: 16rem;
+  max-width: auto; }

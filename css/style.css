@@ -1,0 +1,130 @@
+/* background */
+
+body{
+    background-color: #291129;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+body a{
+    color: #fff;
+}
+
+/* Header */
+.header{
+    background-color: #0A45C3;
+}
+
+/* Ancho minimo para el nav bar ico */
+
+.min-wi{
+    min-width: 60px;
+}
+
+.anchor-header{
+    text-decoration: none;
+}
+
+.anchor-header:hover{
+    background-color: #062B79;
+    color: #eee;
+}
+
+.anchor-header-title{
+    text-decoration: none;
+}
+
+.anchor-header-title:hover{
+    color: #fff;
+    text-shadow: 0 0 4px #fff;
+}
+
+/* Color de Menu navegacion Responsive */
+
+.menu-offcanvas{
+    background-color: #0A45C3;
+}
+
+.anchor-offcanvas{
+    text-decoration: none;
+}
+
+.anchor-offcanvas:hover{
+    background-color: #062B79;
+    color: #eee;
+}
+
+
+/* Main */
+
+.main-color{
+    background-color: #7491F6;
+}
+
+.main-anchor:hover{
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+}
+
+.main-anchor-title{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-anchor-title:hover{
+    color:#eee;
+    text-shadow: 0 0 3px #fff;
+}
+
+.main-anchor-tilte:active{
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+}
+
+
+/* Dando la misma altura de las imagenes */
+
+.img-fix{
+    height: 16rem;
+    max-width: auto;
+}
+
+/* Animaciones */
+
+.fluid{
+    animation: fluir 30s ease-in-out infinite;
+    background: linear-gradient(45deg, #0e4acc, #062b79, #0e4acc, #062b79);
+    background-size: 300%;
+}
+
+@keyframes fluir {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 50% 50%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
+
+.glowing{
+    transition: 1.2s;
+}
+
+.glowing:hover{
+    box-shadow: 0px 0px 10px #7491F6;
+    transform: scale(1.003)
+}
+
+/* Media queries */
+
+/* Media querie para dejar el menu pegado arriba cuando ya este el icono de hamburguesa */
+@media screen and (max-width: 992px){
+
+    .sticky-menu{
+        position: sticky;
+        top: 0;
+    }
+}
